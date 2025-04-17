@@ -211,7 +211,7 @@ class CalendarScreen(Screen):
             body = body_input.text.strip()
 
             if not to_address or not subject or not body:
-                print("Заполни все поля, брат")  # Можно алерт добавить, если хочешь
+
                 return
 
             try:
