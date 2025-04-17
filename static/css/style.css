@@ -1,0 +1,108 @@
+/* Основной фон и шрифт */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Заголовки */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+/* Календарь */
+table.calendar-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 2px; /* Разделение между ячейками */
+}
+
+table.calendar-table th,
+table.calendar-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+table.calendar-table th {
+    background-color: #f0f0f0;
+}
+
+/* Разделение между ячейками */
+td {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Подсветка текущего дня */
+td.today {
+    background-color: #d9f7be;
+    font-weight: bold;
+}
+
+/* События и встречи */
+.event, .meeting {
+    display: block;
+    background-color: #e3f2fd;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.event:hover, .meeting:hover {
+    background-color: #bbdefb;
+}
+
+.event {
+    background-color: #e3f2fd; /* Светло-синий для событий */
+}
+
+.meeting {
+    background-color: #c8e6c9; /* Светло-зеленый для встреч */
+}
+
+/* Стили для кнопок */
+button {
+    margin-top: 10px;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Модальные окна */
+.modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
